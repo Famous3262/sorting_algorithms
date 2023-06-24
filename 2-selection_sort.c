@@ -26,7 +26,10 @@ void swap_ints(int *a, int *b)
  */
 void selection_sort(int *array, size_t size)
 {
-	if (array == NULL || size < 2)
+	int *min_idx;
+	size_t i, j;
+
+	if (array ==  NULL || size < 2)
 		return;
 
 	for (size_t i = 0; i < size - 1; i++)
